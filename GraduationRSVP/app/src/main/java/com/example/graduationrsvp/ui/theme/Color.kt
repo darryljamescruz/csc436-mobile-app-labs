@@ -1,4 +1,4 @@
-package com.example.grad.ui.theme
+package com.example.graduationrsvp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

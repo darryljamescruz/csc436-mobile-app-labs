@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.grad"
+    namespace = "com.example.graduationrsvp"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.grad"
+        applicationId = "com.example.graduationrsvp"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

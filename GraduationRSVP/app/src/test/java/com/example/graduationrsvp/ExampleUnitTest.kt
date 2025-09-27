@@ -1,4 +1,4 @@
-package com.example.grad
+package com.example.graduationrsvp
 
 import org.junit.Test
 

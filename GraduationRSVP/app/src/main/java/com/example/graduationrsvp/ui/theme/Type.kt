@@ -1,4 +1,4 @@
-package com.example.grad.ui.theme
+package com.example.graduationrsvp.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
