@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -20,6 +21,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.unit.dp
 import com.example.graduationrsvp.ui.theme.GraduationRSVPTheme
 
 class MainActivity : ComponentActivity() {
@@ -54,7 +56,10 @@ fun GradScreen(modifier: Modifier = Modifier) {
         fontWeight = FontWeight.Bold,
         lineHeight = 50.sp,
         modifier = modifier
+            .fillMaxWidth()
+            .padding(top = 150.dp)
     )
+
 }
 
 @Preview(showBackground = true)
