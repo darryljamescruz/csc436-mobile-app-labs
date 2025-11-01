@@ -78,11 +78,17 @@ fun PetApp(
             onAdoptClick = {
                navController.navigate(Routes.Adopt)
             },
+            onUpClick = {
+               navController.navigateUp()
+            }
          )
       }
       composable<Routes.Adopt> {
          AdoptScreen(
             pet = petViewModel.selectedPet,
+            onUpClick = {
+               navController.navigateUp()
+            }
          )
       }
    }
@@ -158,6 +164,8 @@ fun DetailScreen(
       topBar = {
          PetAppBar(
             title = "Details",
+            canNavigateBack = true,
+            onUpClick = onUpClick
          )
       }
    ) { innerPadding ->
@@ -213,6 +221,8 @@ fun AdoptScreen(
       topBar = {
          PetAppBar(
             title = "Thank You!",
+            canNavigateBack = true,
+            onUpClick = onUpClick
          )
       }
    ) { innerPadding ->
